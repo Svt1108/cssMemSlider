@@ -40,9 +40,17 @@ visibility: hidden;
     visibility: visible;
 }
 
+#radio1:checked~#buttons #label1 {
+    background-color: rgb(3, 178, 247);
+}
+
 #radio2:checked~#slide2 {
     opacity: 1;
     visibility: visible;
+}
+
+#radio2:checked~#buttons #label2 {
+    background-color: rgb(3, 178, 247);
 }
 
 #radio3:checked~#slide3 {
@@ -50,14 +58,26 @@ visibility: hidden;
     visibility: visible;
 }
 
+#radio3:checked~#buttons #label3 {
+    background-color: rgb(3, 178, 247);
+}
+
 #radio4:checked~#slide4 {
     opacity: 1;
     visibility: visible;
 }
 
+#radio4:checked~#buttons #label4 {
+    background-color: rgb(3, 178, 247);
+}
+
 #radio5:checked~#slide5 {
     opacity: 1;
     visibility: visible;
+}
+
+#radio5:checked~#buttons #label5 {
+    background-color: rgb(3, 178, 247);
 }
 
 .slide {
@@ -66,7 +86,7 @@ visibility: hidden;
     display:flex;
     flex-direction: column;
     padding-top: 3rem;
-    transition: opacity 3s, visibility 3s;
+    transition: opacity 2s, visibility 2s;
     opacity: 0;
     visibility: hidden;
 }
@@ -150,6 +170,7 @@ width: 1.5rem;
 height: 1.5rem;
 border-radius: 50%;
 background-color: white;
+border: 0.1rem solid rgb(18, 1, 68);
 cursor: pointer;
 }
 
