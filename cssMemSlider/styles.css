@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body {
@@ -22,13 +22,15 @@ body {
 }
 
 .slider {
-    width: 60rem;
+    width: 45%;
+    max-width: 58rem;
     height: 64rem;;
     margin: 0 auto;
     background-color: black;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 53rem 11rem;
+padding: 0 3%;
 }
 
 input[name="rad"] {
@@ -37,47 +39,52 @@ visibility: hidden;
 
 #radio1:checked~#slide1 {
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 #radio1:checked~#buttons #label1 {
     background-color: rgb(3, 178, 247);
+    border: 0.7rem solid black;
 }
 
 #radio2:checked~#slide2 {
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 #radio2:checked~#buttons #label2 {
     background-color: rgb(3, 178, 247);
+    border: 0.7rem solid black;
 }
 
 #radio3:checked~#slide3 {
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 #radio3:checked~#buttons #label3 {
     background-color: rgb(3, 178, 247);
+    border: 0.7rem solid black;
 }
 
 #radio4:checked~#slide4 {
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 #radio4:checked~#buttons #label4 {
     background-color: rgb(3, 178, 247);
+    border: 0.7rem solid black;
 }
 
 #radio5:checked~#slide5 {
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 #radio5:checked~#buttons #label5 {
     background-color: rgb(3, 178, 247);
+    border: 0.7rem solid black;
 }
 
 .slide {
@@ -88,7 +95,8 @@ visibility: hidden;
     padding-top: 3rem;
     transition: opacity 2s, visibility 2s;
     opacity: 0;
-    visibility: hidden;
+    overflow: hidden;
+    /* visibility: hidden; */
 }
 
 .slide__img {
@@ -101,9 +109,9 @@ visibility: hidden;
 width: 60%;
 font-size: 1.6rem;
 color: white;
-padding-left: 5rem;
 padding-top: 2rem;
 background-color: black;
+text-align: center;
 }
 
 #slide1 {
@@ -155,23 +163,35 @@ background-color: black;
 
 .buttons {
     display:flex;
-    gap: 0.4rem;
-    height: 1.5rem;
+    /* width: 60%; */
+    /* gap: 0.1rem; */
+    height: 2.3rem;
     grid-row: 2/3;
 grid-column: 2/3;
 justify-self: flex-end;
-padding-right: 5rem;
+/* padding-right: 4rem; */
 padding-top: 2.3rem;
 z-index: 100;
 }
 
 .buttons__button {
-width: 1.5rem;
-height: 1.5rem;
+width: 2.3rem;
+height: 2.3rem;
 border-radius: 50%;
-background-color: white;
-border: 0.1rem solid rgb(18, 1, 68);
+background-color: rgba(255, 255, 255, 0.8);
+/* border: 0.1rem solid rgb(18, 1, 68); */
 cursor: pointer;
+/* box-shadow: 0 0 0 6px #fff, 0 0 0 12px #888; */
+border: 0.7rem solid black;
+}
+
+.buttons__button:hover {
+    background-color: rgba(127, 246, 208, 0.6);
+}
+
+.buttons__button:active {
+background-color: rgb(108, 71, 129);
+/* border: 0.2rem solid rgba(26, 185, 248, 0.8); */
 }
 
 
