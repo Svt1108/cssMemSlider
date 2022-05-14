@@ -190,7 +190,7 @@ input[name="rad"] {
 
 /*--------------------------- media ----------------------------- */
 
-@media (max-width: 376px) {
+@media (max-width: 481px) {
   .slider {
     grid-template-columns: 60% 40%;
     grid-template-rows: 49.5rem 14.5rem;
@@ -218,7 +218,7 @@ input[name="rad"] {
   }
 
   .slide__img {
-    width: 31.6rem;
+    width: 42rem;
     height: 46.5rem;
   }
 
